@@ -93,12 +93,13 @@ function draw() {
 function mouseDragged()
 {
   // Set position of stone when mouse is dragged
-	Matter.Body.setPosition(mango1.body, {x:mouseX, y:mouseY});
+	Matter.Body.setPosition(stone.body, {x:mouseX, y:mouseY});
 }
 
 function mouseReleased()
 {
 	launcher.fly();
+	
 }
 
 
